@@ -6,6 +6,8 @@
     excludesfile = ~/.gitignore.global
     attributesfile = ~/.gitattributes.global
     pager = less -FRSX
+[credential]
+    helper = osxkeychain
 [merge]
     summary = true
 [push]
