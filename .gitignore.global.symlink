@@ -7,11 +7,6 @@
 *.o
 *.so
  
-# Python things
-###############
-.python-version
-.tox
-
 # Packages #
 ############
 *.7z
@@ -39,13 +34,19 @@ dsa_priv.pem
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# --------
+# MacOS
+# --------
+.DS_Store
+._*
+# OS or Editor files
 ._*
 
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
 *.docset
-
 #profile
 
 # Always-ignore extensions
@@ -53,7 +54,6 @@ Thumbs.db
 *.err
 *.log
 *.sass-cache
-
 # Xcode
 *.pbxuser
 *.mode1v3
@@ -84,14 +84,11 @@ CVS
 *~.nib
 *.swp
 *~
-
-#
 ~*
 idea*
 private*
 *.idea
 *.private
-*.vagrant
 *(Autosaved).rtfd/
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
