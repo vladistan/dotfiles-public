@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is [my](https://github.com/dcreager/) collection of dotfiles.  It's
+This is [my](https://github.com/vladistan/) collection of dotfiles.  It's
 managed by a [`dotfiles`](https://github.com/dcreager/dotfiles-base/)
 script that automatically symlinks files into `$HOME` from multiple
 dotfiles repositories.
