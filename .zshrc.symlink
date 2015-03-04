@@ -1,20 +1,42 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_CUSTOM=$HOME/zsh
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="robbyrussell"
 CASE_SENSITIVE="true"
-DISABLE_AUTO_UPDATE="true"
+export UPDATE_ZSH_DAYS=13
+ENABLE_CORRECTION="true"
+
 COMPLETION_WAITING_DOTS="true"
 SOLARIZED_THEME=light
 GITFAST_USE_OHMYZSH_PROMPT=1
 
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+HIST_STAMPS="mm/dd/yyyy"
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+else
+   export EDITOR='mvim'
+fi
 autoload -U is-at-least
 if ! is-at-least 4.3.9; then
     MONOCHROME_PROMPT=1
 fi
 
 plugins=(path gempath redjack git git-flow gitfast)
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
 typeset -U path
 source $ZSH/oh-my-zsh.sh
 source $HOME/zsh/themes/dcreager.zsh-theme
 unsetopt correct_all
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
