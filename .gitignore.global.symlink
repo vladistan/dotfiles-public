@@ -93,6 +93,7 @@ idea*
 private*
 *.idea
 *.private
+*.vagrant
 *(Autosaved).rtfd/
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
