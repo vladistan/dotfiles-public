@@ -10,6 +10,7 @@
     helper = osxkeychain
 [merge]
     summary = true
+    tool = bc3
 [push]
     default = matching
 [alias]
