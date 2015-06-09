@@ -6708,7 +6708,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-14T19:30:41Z</date>
+	<date>2015-02-24T19:05:53Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -6787,7 +6787,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>.Helvetica Neue DeskInterface</string>
+	<string>Lucida Grande</string>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>Arrangement 2</key>
