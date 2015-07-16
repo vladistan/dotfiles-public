@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/editor-config.symlink"]
 	path = .vim/bundle/editor-config.symlink
 	url = https://github.com/tpope/vim-sensible.git
+[submodule ".vim/bundle/vim-jdaddy.symlink"]
+	path = .vim/bundle/vim-jdaddy.symlink
+	url = https://github.com/tpope/vim-jdaddy
