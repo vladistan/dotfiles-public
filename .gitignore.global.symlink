@@ -7,6 +7,11 @@
 *.o
 *.so
  
+# Python things
+###############
+.python-version
+.tox
+
 # Packages #
 ############
 *.7z
@@ -84,11 +89,14 @@ CVS
 *~.nib
 *.swp
 *~
+
+#
 ~*
 idea*
 private*
 *.idea
 *.private
+*.vagrant
 *(Autosaved).rtfd/
 Backup[ ]of[ ]*.pages/
 Backup[ ]of[ ]*.key/
