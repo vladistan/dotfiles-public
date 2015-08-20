@@ -1,4 +1,4 @@
-aws () {
+Aws () {
     local PERSONA="$1"
     local PERSONA_FILE="$HOME/.aws/$PERSONA"
 
@@ -31,4 +31,4 @@ aws_prompt_info () {
 
 ZSH_THEME_AWS_PROMPT_PREFIX=
 ZSH_THEME_AWS_PROMPT_SUFFIX=
-aws none
+Aws none
