@@ -61,3 +61,8 @@
 
 [include]
     path = ~/.gitconfig.private
+
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
