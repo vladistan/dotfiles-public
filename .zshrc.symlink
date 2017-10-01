@@ -48,3 +48,7 @@ alias netstat=~/bin/netstat
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/vkorolev/.sdkman"
+[[ -s "/Users/vkorolev/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/vkorolev/.sdkman/bin/sdkman-init.sh"
