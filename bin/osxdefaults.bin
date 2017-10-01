@@ -69,6 +69,23 @@ defaults write com.apple.dock mineffect scale
 # Dock: speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
 
+# Dock: disable single app mode
+defaults write com.apple.dock single-app -bool False; killall Dock
+
+# Show only static apps in Dock
+defaults write com.apple.dock static-only -bool TRUE; killall Dock
+
+# Automatically hide the dock
+defaults write com.apple.dock autohide -bool true
+
+# Delay before dock pops up
+defaults write com.apple.dock autohide-delay -float 0.5
+
+# Dock pop-up speed
+defaults write com.apple.dock autohide-time-modifier -float 3
+
+
+
 
 # Finder
 # ----------------------------------------------------------------------
