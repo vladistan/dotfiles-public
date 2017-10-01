@@ -41,3 +41,9 @@ source $HOME/zsh/themes/dcreager.zsh-theme
 unsetopt correct_all
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
+eval `/usr/libexec/path_helper -s`
+
+alias netstat=~/bin/netstat
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
