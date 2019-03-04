@@ -29,7 +29,7 @@ To install, you must already have the
 [`dotfiles`](https://github.com/dcreager/dotfiles-base/) script
 installed.  Then, just run:
 
-    $ cd ~
-    $ git clone git://github.com/dcreager/dotfiles-public .dotfiles.dcreager
-    $ dotfiles install
-    $ reload
+    cd ~
+    git clone git://github.com/vladistan/dotfiles-public .dotfiles.dcreager
+    dotfiles install
+    reload
