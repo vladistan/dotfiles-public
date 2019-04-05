@@ -66,3 +66,6 @@
 	autosetuprebase = always
 [rerere]
 	enabled = true
+[user]
+	name = vlad
+	email = vlad@v-lad.org
