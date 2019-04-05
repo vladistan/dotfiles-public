@@ -48,3 +48,6 @@ alias netstat=~/bin/netstat
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+eval "$(nodenv init -)"
