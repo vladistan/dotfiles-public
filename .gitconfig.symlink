@@ -1,8 +1,8 @@
 [color]
     ui = auto
+    branch = auto
     diff = auto
     status = auto
-    branch = auto
 
 
 [color "branch"]
@@ -23,6 +23,7 @@
 	commit = white bold
 
 [core]
+    commitGraph = true
     excludesfile = ~/.gitignore.global
     attributesfile = ~/.gitattributes.global
     pager = less -FRSX
@@ -30,8 +31,14 @@
     autocrlf = input
     editor = vim
 
+[fetch]
+    writeCommitGraph = true
+
 [credential]
     helper = osxkeychain
+
+[gc]
+    writeCommitGraph = true
 
 [merge]
     summary = true
@@ -105,6 +112,7 @@
 
 [init]
 	defaultBranch = main
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
