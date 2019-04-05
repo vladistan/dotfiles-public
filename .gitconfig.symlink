@@ -109,5 +109,5 @@
 [includeIf "gitdir:~/Proj/biomath/"]
     path = ~/.gitconfig.work
 
-[includeIf "gitdir:~/Proj/biomath/"]
-    path = ~/.gitconfig.work
+[init]
+       defaultBranch = master
