@@ -17,6 +17,8 @@ GITFAST_USE_OHMYZSH_PROMPT=1
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+HISTSIZE=50000
+SAVEHIST=50000
 HIST_STAMPS="mm/dd/yyyy"
 
 # Preferred editor for local and remote sessions
@@ -30,7 +32,7 @@ if ! is-at-least 4.3.9; then
     MONOCHROME_PROMPT=1
 fi
 
-plugins=(osx path vagrant docker redjack git git-flow gitfast z)
+plugins=(osx path docker git gitfast zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

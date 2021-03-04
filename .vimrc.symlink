@@ -34,7 +34,7 @@ set wildignore+=*/build/lib/*
 set wildignore+=*/__pycache__/*,*.pyc,*.pyo
 
 " Disable output and VCS files
-set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
+set wildignore+=*.a,*.o,*.la,*.lo,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
 
 " Disable archive files
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
