@@ -102,5 +102,8 @@
 [rerere]
 	enabled = true
 [user]
-	name = vlad
-	email = vlad@v-lad.org
+	name = Vlad Korolev
+	email = vlad@appliedbiomath.com
+
+[includeIf "gitdir:~/Proj/biomath/"]
+    path = ~/.gitconfig.work
