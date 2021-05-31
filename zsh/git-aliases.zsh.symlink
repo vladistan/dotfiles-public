@@ -26,6 +26,6 @@ alias gup="git upstream"
 alias gx="git log --graph --oneline --decorate --all"
 alias gxx="gitx --all"
 
-grbo () {
-    git rebase --onto "$2" HEAD~"$1"
-}
+#grbo () {
+#    git rebase --onto "$2" HEAD~"$1"
+#}

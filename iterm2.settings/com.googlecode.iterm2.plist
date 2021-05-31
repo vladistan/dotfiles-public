@@ -4,6 +4,8 @@
 <dict>
 	<key>AFRStrokeThickness</key>
 	<real>0.0</real>
+	<key>AdaptiveFrameRateThroughputThreshold</key>
+	<integer>10000</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AdvancedFontRendering</key>
@@ -2635,8 +2637,12 @@
 	<integer>7</integer>
 	<key>LeftOption</key>
 	<integer>2</integer>
+	<key>MaxHistoryLinesToRestore</key>
+	<integer>2000</integer>
 	<key>MaxVertically</key>
 	<false/>
+	<key>MaximumBytesToProvideToServices</key>
+	<integer>100000</integer>
 	<key>MinimumContrast</key>
 	<real>0.0</real>
 	<key>NeverWarnAboutShortLivedSessions_04984D44-914B-4A49-8AB5-B2ABB5F8A100</key>
@@ -2980,7 +2986,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>0</integer>
+			<integer>8000</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -3133,7 +3139,7 @@
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
-			<true/>
+			<false/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -6128,6 +6134,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -6177,7 +6185,7 @@
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>

@@ -45,7 +45,7 @@ ZSH_THEME_AWS_PROMPT_PREFIX=" %{%b$Fred%}‡"
 ZSH_THEME_AWS_PROMPT_SUFFIX="%{$reset%}"
 
 PROMPT='%{$reset%}
-%{%}$(_prompt_char)%{%} %{%B$Fcyan%}%m%{$reset%} %{%b$Fmagenta%}%~%{$reset%}$(git_prompt_info)$(aws_prompt_info)$(virtualenv_prompt_info)%E%{$reset%}
+%{%}$(_prompt_char)%{%} %{%B$Fcyan%}%m%{$reset%} %{%b$Fmagenta%}%~%{$reset%}$(git_prompt_info)$(aws_prompt_info)$(virtualenv_prompt_info) $(tf_prompt_info)% %E%{$reset%}
 %(!.#.$) '
 
 unset RPROMPT
