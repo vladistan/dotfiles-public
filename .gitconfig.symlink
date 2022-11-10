@@ -67,5 +67,10 @@
 [rerere]
 	enabled = true
 [user]
-	name = vlad
+	name = Vlad Korolev
 	email = vlad@v-lad.org
+
+[includeIf "gitdir:~/Proj/biomath/"]
+    path = ~/.gitconfig.work
+[init]
+	defaultBranch = master
