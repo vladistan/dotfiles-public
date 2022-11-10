@@ -44,8 +44,8 @@ source $HOME/zsh/themes/dcreager.zsh-theme
 setopt ignore_eof
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
-export PATH="$PATH:$HOME/.rvm/bin"
 eval `/usr/libexec/path_helper -s`
+export PATH="${PATH}:${HOME}/.pyenv/bin:${HOME}/.rvm/bin"
 
 alias netstat=~/bin/netstat
 
