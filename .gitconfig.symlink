@@ -1,16 +1,49 @@
 [color]
-    branch = true
-    diff = true
-    status = true
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow bold
+	remote = green
+
+[color "status"]
+	added = yellow bold
+	changed = green bold
+	untracked = cyan bold
+
+[color "diff"]
+    	new = yellow bold
+	old = magenta bold
+	meta = cyan bold
+	frag = white bold
+	commit = white bold
+
 [core]
     excludesfile = ~/.gitignore.global
     attributesfile = ~/.gitattributes.global
     pager = less -FRSX
+    quotepath = true	
+    autocrlf = input
+    editor = vim
+
+[credential]
+    helper = osxkeychain
+
 [merge]
     summary = true
 [push]
     default = matching
 [alias]
+    d = diff --color-words
+    dh = diff HEAD
+    dc = diff --staged
+    dw = diff --word-diff
+    dcw = diff --color-words
+    who = shortlog -s --
     lol = log --graph --oneline --decorate --all
 
     # https://git.wiki.kernel.org/articles/a/l/i/Aliases.html
@@ -72,5 +105,6 @@
 
 [includeIf "gitdir:~/Proj/biomath/"]
     path = ~/.gitconfig.work
-[init]
-	defaultBranch = master
+
+[includeIf "gitdir:~/Proj/biomath/"]
+    path = ~/.gitconfig.work

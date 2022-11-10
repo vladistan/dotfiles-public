@@ -3,7 +3,7 @@ ZSH_CUSTOM=$HOME/zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="juanghurtado"
 CASE_SENSITIVE="true"
 export UPDATE_ZSH_DAYS=13
 ENABLE_CORRECTION="true"
@@ -17,6 +17,8 @@ GITFAST_USE_OHMYZSH_PROMPT=1
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+HISTSIZE=50000
+SAVEHIST=50000
 HIST_STAMPS="mm/dd/yyyy"
 
 # Preferred editor for local and remote sessions
@@ -30,7 +32,7 @@ if ! is-at-least 4.3.9; then
     MONOCHROME_PROMPT=1
 fi
 
-plugins=(path vagrant docker redjack git git-flow gitfast z)
+plugins=(macos path docker git gitfast terraform zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -38,7 +40,8 @@ plugins=(path vagrant docker redjack git git-flow gitfast z)
 typeset -U path
 source $ZSH/oh-my-zsh.sh
 source $HOME/zsh/themes/dcreager.zsh-theme
-unsetopt correct_all
+#unsetopt correct_all
+setopt ignore_eof
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
 export PATH="$PATH:$HOME/.rvm/bin"
