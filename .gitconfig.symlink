@@ -101,6 +101,9 @@
 [rerere]
     enabled = true
 
+[includeIf "gitdir:~/Proj/vivodyne/"]
+    path = ~/.gitconfig.work
+
 [init]
     defaultBranch = main
 
