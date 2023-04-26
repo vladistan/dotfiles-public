@@ -106,7 +106,7 @@
 	name = Vlad Korolev
 	email = vlad@v-lad.org
 
-[includeIf "gitdir:~/Proj/biomath/"]
+[includeIf "gitdir:~/Proj/vivodyne/"]
     path = ~/.gitconfig.work
 
 [init]
