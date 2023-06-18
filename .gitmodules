@@ -25,9 +25,6 @@
 [submodule ".vim/bundle/solarized.symlink"]
 	path = .vim/bundle/solarized.symlink
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule ".vim/bundle/puppet.symlink"]
-	path = .vim/bundle/puppet.symlink
-	url = git@github.com:dcreager/vim-puppet.git
 [submodule ".vim/bundle/vim-airline.symlink"]
 	path = .vim/bundle/vim-airline.symlink
 	url = https://github.com/bling/vim-airline.git
