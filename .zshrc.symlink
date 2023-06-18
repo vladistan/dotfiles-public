@@ -13,6 +13,8 @@ COMPLETION_WAITING_DOTS="true"
 SOLARIZED_THEME=light
 GITFAST_USE_OHMYZSH_PROMPT=1
 
+autoload -U is-at-least
+
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
