@@ -45,6 +45,8 @@ setopt ignore_eof
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
 eval `/usr/libexec/path_helper -s`
+export PATH="${PATH}:${HOME}/.pyenv/bin"
+export PATH="${PATH}:/Applications/PyCharm.app/Contents/MacOS"
 
 alias netstat=~/bin/netstat
 
