@@ -34,7 +34,7 @@ eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
 
-plugins=(macos pyenv path docker git gitfast terraform zsh-navigation-tools z)
+plugins=(aws macos pyenv path docker git gitfast terraform zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
