@@ -34,7 +34,7 @@ eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
 
-plugins=(aws macos pyenv path docker git gitfast terraform zsh-navigation-tools z)
+plugins=(aws macos poetry poetry-env pyenv path docker git gitfast gitfast kube-ps1 kubectl web-search terraform zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -49,6 +49,7 @@ export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${
 eval `/usr/libexec/path_helper -s`
 export PATH="${PATH}:${HOME}/.pyenv/bin"
 export PATH="${PATH}:/Applications/PyCharm.app/Contents/MacOS"
+export PATH="${PATH}:/Applications/IntelliJ IDEA.app/Contents/MacOS"
 
 alias netstat=~/bin/netstat
 
@@ -57,3 +58,6 @@ autoload -U is-at-least
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
