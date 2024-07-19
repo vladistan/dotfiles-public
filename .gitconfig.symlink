@@ -110,4 +110,4 @@
     path = ~/.gitconfig.work
 
 [init]
-       defaultBranch = master
+	defaultBranch = main
