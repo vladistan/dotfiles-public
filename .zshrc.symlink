@@ -3,6 +3,7 @@ ZSH_CUSTOM=$HOME/zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+
 ZSH_THEME="juanghurtado"
 CASE_SENSITIVE="true"
 export UPDATE_ZSH_DAYS=13
@@ -21,18 +22,17 @@ HISTSIZE=50000
 SAVEHIST=50000
 HIST_STAMPS="mm/dd/yyyy"
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
-else
-   export EDITOR='mvim'
-fi
-autoload -U is-at-least
 if ! is-at-least 4.3.9; then
     MONOCHROME_PROMPT=1
 fi
 
-plugins=(macos path docker git gitfast terraform zsh-navigation-tools z)
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
+
+plugins=(macos pyenv path docker git gitfast terraform zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -43,16 +43,12 @@ source $HOME/zsh/themes/dcreager.zsh-theme
 #unsetopt correct_all
 setopt ignore_eof
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
+export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
 eval `/usr/libexec/path_helper -s`
-export PATH="${PATH}:${HOME}/.pyenv/bin:${HOME}/.rvm/bin"
 
 alias netstat=~/bin/netstat
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+autoload -U is-at-least
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
