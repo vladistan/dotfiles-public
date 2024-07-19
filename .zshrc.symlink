@@ -34,7 +34,7 @@ eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
 
-plugins=(aws macos poetry poetry-env pyenv path docker git gitfast gitfast kube-ps1 kubectl web-search terraform zsh-navigation-tools z)
+plugins=(aws direnv macos poetry poetry-env pyenv path docker git gitfast gitfast kube-ps1 kubectl web-search terraform zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
