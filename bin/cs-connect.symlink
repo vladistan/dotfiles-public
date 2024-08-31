@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Connecting to CS..."
+
+if [ $# -eq 0 ]; then
+    echo "Error: Please provide the codespace name as an argument."
+    exit 1
+fi
+
+source ~/Proj/mine/.envrc
+
+
+CODESPACE_NAME="$1"
+/usr/local/bin/gh cs ssh -c "$CODESPACE_NAME" --stdio -- -i /Users/vlad/.ssh/codespaces.auto
