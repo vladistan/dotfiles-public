@@ -32,7 +32,7 @@ if ! is-at-least 4.3.9; then
     MONOCHROME_PROMPT=1
 fi
 
-plugins=(macos path docker git gitfast terraform zsh-navigation-tools z)
+plugins=(macos direnv path docker git gitfast terraform zsh-navigation-tools z)
 #
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -40,8 +40,7 @@ plugins=(macos path docker git gitfast terraform zsh-navigation-tools z)
 typeset -U path
 source $ZSH/oh-my-zsh.sh
 source $HOME/zsh/themes/dcreager.zsh-theme
-#unsetopt correct_all
-setopt ignore_eof
+
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 
 export PYENV_ROOT="${HOME}/.pyenv"
@@ -51,6 +50,7 @@ export PATH="${PATH}:${HOME}/.pyenv/bin:${HOME}/.rvm/bin"
 
 alias netstat=~/bin/netstat
 
+export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(pyenv init --path)"
@@ -59,3 +59,11 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 eval "$(nodenv init -)"
+
+source "$HOME/.rye/env"
+
+# Created by `pipx` on 2024-08-21 22:46:15
+export PATH="$PATH:/Users/vlad/.local/bin"
+
+# Added by `rbenv init` on Mon Aug 26 10:19:31 EDT 2024
+eval "$(rbenv init - --no-rehash zsh)"
