@@ -44,6 +44,7 @@ export PYENV_ROOT="${HOME}/.pyenv"
 export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
 
 eval `/usr/libexec/path_helper -s`
+export PATH="${PATH}:${HOME}/.pyenv/bin"
 
 alias netstat=~/bin/netstat
 
