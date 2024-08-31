@@ -46,8 +46,6 @@ export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${
 eval `/usr/libexec/path_helper -s`
 export PATH="${PATH}:${HOME}/.pyenv/bin"
 
-alias netstat=~/bin/netstat
-
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
