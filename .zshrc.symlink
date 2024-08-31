@@ -22,7 +22,7 @@ HISTSIZE=50000
 SAVEHIST=50000
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(path macos pyenv direnv docker git gitfast terraform zsh-navigation-tools z)
+plugins=(path poetry poetry-env pyenv direnv docker git gitfast terraform zsh-navigation-tools z)
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
