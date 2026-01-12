@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ "$1" != "arsenale" ] && [ "$1" != "vladistan" ]; then
+    echo "Usage: $0 [arsenale|vladistan]"
+    exit 1
+fi
+
+# Revoke existing credentials
+gcloud auth application-default revoke
+gcloud auth revoke
+
+# Set up new credentials based on argument
+if [ "$1" = "arsenale" ]; then
+    gcloud config set account vlad@arsenale.bio
+    gcloud auth login
+    gcloud auth application-default login
+    gcloud auth application-default set-quota-project kube-v0
+else
+    gcloud config set account vladistan@gmail.com
+    gcloud auth login
+    gcloud auth application-default login
+    gcloud auth application-default set-quota-project taxestime
+fi
+
+# Verify configuration
+gcloud auth list
