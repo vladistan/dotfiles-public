@@ -54,6 +54,7 @@
     dcw = diff --color-words
     who = shortlog -s --
     lol = log --graph --oneline --decorate --all
+    lolc = log --graph --oneline --decorate --all --format='%C(cyan)%h%C(reset) %C(green)%d%C(reset) %s %C(dim)%cr'
 
     # https://git.wiki.kernel.org/articles/a/l/i/Aliases.html
     # `git remote prune origin`: remove remote-tracking branches that were deleted from the remote repo

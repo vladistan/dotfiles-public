@@ -22,12 +22,15 @@ HISTSIZE=50000
 SAVEHIST=50000
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(path macos aws poetry poetry-env pyenv direnv docker git gitfast terraform kube-ps1 kubectl web-search zsh-navigation-tools z)
+# plugins=(path macos aws poetry poetry-env pyenv direnv docker git gitfast terraform kube-ps1 kubectl web-search zsh-navigation-tools z)
+plugins=(path macos aws pyenv direnv docker git gitfast terraform kube-ps1 kubectl web-search zsh-navigation-tools z)
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init --path)"
+#eval "$(pyenv virtualenv-init -)"
+
+#eval "$(rbenv init - --no-rehash zsh)"
 
 #
 # Compilation flags
@@ -42,4 +45,5 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
 export PATH="${PATH}:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:${HOME}/bin"
 eval `/usr/libexec/path_helper -s`
 
-. "$HOME/.cargo/env" 
+. "$HOME/.cargo/env"
+
